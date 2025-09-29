@@ -1,0 +1,41 @@
+body {
+  width: 80vw;
+  margin-inline: auto;
+  text-align: center;
+}
+
+header {
+  background-color: hsl(170 77% 64%);
+  float: right;
+  width: 67%;
+  height: 10vh;
+}
+
+.nature {
+  float: left;
+  width: 33%;
+  height: 40vh;
+}
+
+.sunflower {
+  width: 34%;
+  height: 30vh;
+}
+
+img {
+  object-fit: fill;
+}
+
+aside {
+  background-color: hsl(0 94% 82%);
+  float: right;
+  width: 33%;
+  height: 40vh;
+}
+
+footer {
+  background-color: hsl(31 97% 72%);
+  float: left;
+  width: 67%;
+  height: 10vh;
+}

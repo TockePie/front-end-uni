@@ -1,0 +1,46 @@
+body {
+  width: 60rem;
+  height: 40rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0;
+  grid-template-areas:
+    "nature header header"
+    "nature sunflower aside"
+    "footer footer aside";
+}
+
+.nature {
+  grid-area: nature;
+}
+
+header {
+  grid-area: header;
+  background-color: hsl(170, 77%, 64%);
+}
+
+.sunflower {
+  grid-area: sunflower;
+}
+
+aside {
+  grid-area: aside;
+  background-color: hsl(0, 94%, 82%);
+}
+
+footer {
+  grid-area: footer;
+  background-color: hsl(31, 97%, 72%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
