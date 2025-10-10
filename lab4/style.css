@@ -1,0 +1,33 @@
+.f-element {
+  background-color: lightblue;
+  color: blue;
+}
+
+.f-element.active {
+  background-color: lightgreen;
+  color: green;
+}
+
+.s-element {
+  background-color: darksalmon;
+  color: red;
+}
+
+.s-element.active {
+  background-color: plum;
+  color: purple;
+}
+
+.image-container {
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 20rem;
+  width: 40rem;
+}
+
+#el17 {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
