@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="крадожон, максим, іо-32, програмувати, кпі"
+    />
+    <meta
+      name="description"
+      content="Персональна вебсторінка студента (лабораторна робота 5)"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Крадожон М. ІО-32</title>
+  </head>
+
+  <body>
+    <div class="flex flex-col gap-8 p-4">
+      <h1 class="text-3xl font-extrabold text-center">
+        Перевірка введення даних (Варіант 9)
+      </h1>
+
+      <form id="userForm" class="mx-auto w-full max-w-76 flex flex-col gap-5">
+        <div class="flex flex-col gap-3">
+          <label class="text-stone-600">ПІБ</label>
+          <input
+            type="text"
+            id="pib"
+            placeholder="Напр. Іваненко Іван Іванович"
+            class="border border-stone-400 p-2 rounded-xl"
+          />
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <label class="text-stone-600">Варіант</label>
+          <input
+            type="number"
+            id="variant"
+            placeholder="Введіть свій варіант"
+            class="border border-stone-400 p-2 rounded-xl"
+          />
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <label class="text-stone-600">Група</label>
+          <input
+            type="text"
+            id="group"
+            placeholder="ТТТТТТ22 або ТТ-22"
+            class="border border-stone-400 p-2 rounded-xl"
+          />
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <label class="text-stone-600">Дата народження</label>
+          <input
+            type="text"
+            id="birth"
+            placeholder="01.01.2000"
+            class="border border-stone-400 p-2 rounded-xl"
+          />
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <label class="text-stone-600">Адреса</label>
+          <input
+            type="text"
+            id="address"
+            placeholder="м. Київ"
+            class="border border-stone-400 p-2 rounded-xl"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="p-3 rounded-xl bg-stone-950 text-stone-50 cursor-pointer"
+        >
+          Перевірити
+        </button>
+      </form>
+
+      <div id="output" class="mx-auto w-full max-w-96 text-lg"></div>
+    </div>
+
+    <hr />
+
+    <div class="flex flex-col items-center gap-8 p-4">
+      <h1 class="text-3xl font-extrabold text-center">Таблиця подій</h1>
+
+      <div class="flex gap-3 items-center">
+        <label class="text-sm">Виберіть колір:</label>
+        <input type="color" id="colorPicker" value="#ff3b30" />
+        <label class="text-sm">Номер варіанта:</label>
+        <input
+          type="number"
+          id="variantCell"
+          placeholder="Введіть свій варіант"
+          class="border border-stone-400 p-2 rounded-xl"
+        />
+
+        <button
+          id="resetBtn"
+          class="px-3 py-2 rounded-xl bg-stone-950 text-stone-50 cursor-pointer"
+        >
+          Скинути кольори
+        </button>
+      </div>
+
+      <div class="mt-4 overflow-auto">
+        <table
+          id="grid6x6"
+          class="table-auto border-collapse border border-stone-300"
+        ></table>
+      </div>
+    </div>
+  </body>
+
+  <script src="./script.js" type="module"></script>
+</html>
