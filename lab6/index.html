@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="крадожон, максим, іо-32, програмувати, кпі"
+    />
+    <meta
+      name="description"
+      content="Персональна вебсторінка студента (лабораторна робота 5)"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Крадожон М. ІО-32</title>
+  </head>
+
+  <body class="p-6 flex flex-col items-center gap-6">
+    <h1 class="text-center text-3xl font-extrabold mb-5">
+      Отримання даних користувача
+    </h1>
+    <button
+      id="loadUser"
+      class="bg-stone-900 text-stone-50 px-4 py-2 rounded-md cursor-pointer disabled:bg-stone-700 disabled:cursor-not-allowed"
+    >
+      Отримати користувача
+    </button>
+
+    <div
+      id="userInfo"
+      class="border-2 border-stone-500 bg-stone-200 p-4 rounded-md flex flex-col gap-3 max-w-68 w-full text-wrap"
+    ></div>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
